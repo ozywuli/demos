@@ -89,7 +89,7 @@
 				</section>
 				<section class="panel-description">
 					<h3 class="panel-title">Dictionary</h3>
-					<p>I've always wanted to write my own dictionary--that dream hasn't been realized yet, but this app will do for now. Users can search English terms...</p>
+					<p>I've always wanted to write my own dictionary--that dream hasn't been realized yet, but this app will do for now. With this app, users can look up English terms and definitions stored in a MySQL database via PHP.</p>
 				</section>
 				<section class="panel-github">
 					<a href="">See Code on GitHub</a>
