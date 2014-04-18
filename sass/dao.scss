@@ -1,0 +1,100 @@
+@import "reset";
+
+@import "compass/css3";
+
+/* Variables */
+
+$primary-green: #044D29;
+$secondary-green: #168039;
+
+/* Global Effects */
+
+.page {
+	height: 100%;
+	background-color: #EDE0CE;
+}
+
+.globals {
+	max-width: 99rem;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+	font-family: 'Old Standard TT', serif;
+	font-size: 1.5rem;
+
+	a {
+		color: $primary-green;
+		&:hover {
+			color: $secondary-green;
+		}
+	}
+}
+
+.header-and-content {
+	min-height: 100%;
+	margin-bottom: -7.2rem;
+	padding-top: 3rem;
+}
+
+/* Header */
+
+.header-container {
+
+	margin-bottom: 4.5rem;
+	.header-title {
+		font-size: 4.5rem;
+		line-height: 1;
+	}
+
+}
+
+/* Content */
+
+.button-wrapper {
+
+	margin-bottom: 3rem;
+
+	input[type="button"]#retrieve-chapter {
+		width: 12.5rem;
+		height: 3.7rem;
+		border: 0;
+		background-color: $primary-green;
+		margin: 0;
+		padding: 1rem 2rem;
+		font-size: 1.5rem;
+		color: #FFF;
+
+		@include transition(all 150ms ease 0s);
+
+		&:hover {
+			cursor: pointer;
+			background-color: $secondary-green;
+		}
+		&:active {
+			background-color: $primary-green;
+			padding: 1.2rem 1.2rem 0.8rem 1.8rem;
+		}
+	}
+}
+
+#chapter-wrapper {
+	h3 {
+		font-size: 3rem;
+	}
+}
+
+/* Footer */
+
+.header-and-content:after {
+	content: "";
+	display: block;
+}
+
+.header-and-content:after, .site-footer {
+	height: 7.2rem;
+}
+
+.site-footer {
+	padding: 3rem 0;
+	font-size: 1.2rem;
+}

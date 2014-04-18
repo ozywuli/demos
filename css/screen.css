@@ -1,0 +1,471 @@
+/**
+ * -------------------------------------------------
+ * TABLE OF CONTENTS:
+ *
+ * 1.0 RESET
+ * 2.0 IMPORTS
+ * 3.0 MIXINS
+ * 4.0 VARIABLES
+ * 5.0 EFFECTS
+ * 6.0 GLOBALS
+ * 7.0 HEADER
+ *   7.1 Navigation
+ * 8.0 BODY
+ *   8.1 Index
+ *   8.2 Profile
+ * 9.0 FOOTER
+ * 10.0 META
+ * --------------------------------------------------
+*/
+/**
+ * 1.0 $RESET
+ * -----------------------------------------------------------------------------
+ */
+/*------------------------------------*\
+	$RESET
+\*------------------------------------*/
+/* line 7, ../sass/_reset.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/_reset.scss */
+html, body {
+  background: #FFF;
+  color: #000;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  font-style: normal;
+  font-weight: normal;
+  height: 100%;
+  line-height: 1.5;
+  position: relative;
+  cursor: default;
+}
+
+/* line 38, ../sass/_reset.scss */
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 47, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 51, ../sass/_reset.scss */
+ol, ul, li {
+  list-style: none;
+}
+
+/* line 55, ../sass/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 59, ../sass/_reset.scss */
+a:hover {
+  cursor: pointer;
+}
+
+/* line 63, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 68, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 73, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 80, ../sass/_reset.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 86, ../sass/_reset.scss */
+object,
+embed {
+  height: 100%;
+}
+
+/* line 90, ../sass/_reset.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 96, ../sass/_reset.scss */
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 101, ../sass/_reset.scss */
+select {
+  width: 100%;
+}
+
+/* line 105, ../sass/_reset.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 109, ../sass/_reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 112, ../sass/_reset.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/**
+ * 2.0 $IMPORTS
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * 3.0 $MIXINS
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * 4.0 $VARIABLES
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * 5.0 $EFFECTS
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * 6.0 $GLOBALS
+ * -----------------------------------------------------------------------------
+ */
+/* line 61, ../sass/screen.scss */
+.grid {
+  background-image: url("../img/graphy.png");
+  font-size: 1.4rem;
+}
+/* line 64, ../sass/screen.scss */
+.grid a {
+  color: #330936;
+  -webkit-transition: all 150ms ease;
+  -webkit-transition-delay: 0;
+  -moz-transition: all 150ms ease 0;
+  -o-transition: all 150ms ease 0;
+  transition: all 150ms ease 0;
+}
+/* line 68, ../sass/screen.scss */
+.grid a:hover {
+  color: #330936;
+}
+
+/* line 73, ../sass/screen.scss */
+.wrapper {
+  max-width: 119.8rem;
+  margin: 0 auto;
+  padding: 0 1.4rem;
+}
+
+/* line 79, ../sass/screen.scss */
+h2.h2 {
+  font-size: 5.6rem;
+  line-height: 1;
+}
+
+/* line 84, ../sass/screen.scss */
+.push-down {
+  min-height: 100%;
+  margin-bottom: -4.6rem;
+}
+
+/* line 89, ../sass/screen.scss */
+.push-down:after {
+  content: "";
+  display: block;
+}
+
+/**
+ * 7.0 $HEADERS
+ * -----------------------------------------------------------------------------
+ */
+/* line 99, ../sass/screen.scss */
+.header-container {
+  width: 100%;
+  margin-bottom: 2.8rem;
+  background-color: #330936;
+}
+
+/* line 105, ../sass/screen.scss */
+.header-title {
+  float: left;
+  font-size: 4rem;
+  font-weight: bold;
+}
+/* line 109, ../sass/screen.scss */
+.header-title a {
+  color: #FFF;
+}
+/* line 111, ../sass/screen.scss */
+.header-title a:hover {
+  color: #FFF;
+}
+
+/********* 7.1 $NAVIGATION *********/
+/* line 120, ../sass/screen.scss */
+.header-nav {
+  float: right;
+}
+/* line 123, ../sass/screen.scss */
+.header-nav ul li {
+  float: left;
+  margin-left: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* line 128, ../sass/screen.scss */
+.header-nav ul li a {
+  display: block;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  margin: 1.4rem 0;
+  padding: 1rem 1.8rem;
+  background-color: #850062;
+  color: #FFF;
+}
+/* line 136, ../sass/screen.scss */
+.header-nav ul li a:hover {
+  background-color: darkmagenta;
+  color: #FFF;
+}
+
+/* line 144, ../sass/screen.scss */
+.header-nav-about {
+  position: relative;
+}
+
+/* line 148, ../sass/screen.scss */
+.header-nav-about-content {
+  display: none;
+  position: absolute;
+  top: 7.9rem;
+  right: 100%;
+  width: 30rem;
+  margin-right: -6.9rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  background-color: #850062;
+  color: #FFF;
+  z-index: 10;
+}
+
+/**
+ * 8.0 $BODY
+ * -----------------------------------------------------------------------------
+ */
+/* line 167, ../sass/screen.scss */
+.other-container {
+  max-width: 119.8rem;
+  margin: 0 auto;
+  padding: 0 1.4rem;
+}
+
+/* line 173, ../sass/screen.scss */
+.content-container {
+  max-width: 119.8rem;
+  margin: 0 auto;
+  margin-bottom: 15rem;
+}
+/* line 178, ../sass/screen.scss */
+.content-container .grid-sizer {
+  width: 33.3333%;
+}
+@media screen and (max-width: 900px) {
+  /* line 178, ../sass/screen.scss */
+  .content-container .grid-sizer {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* line 178, ../sass/screen.scss */
+  .content-container .grid-sizer {
+    width: 100%;
+  }
+}
+/* line 188, ../sass/screen.scss */
+.content-container .panel-wrapper {
+  float: left;
+  overflow: hidden;
+  padding: 1.4rem;
+}
+/* line 193, ../sass/screen.scss */
+.content-container .panel-wrapper .panel {
+  border-radius: 0.3rem;
+  border: 0.1rem solid #850062;
+  background-color: #FFF;
+}
+/* line 200, ../sass/screen.scss */
+.content-container .panel-wrapper .panel .panel-image a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 206, ../sass/screen.scss */
+.content-container .panel-wrapper .panel .panel-image .panel-image-overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 300ms ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
+}
+/* line 215, ../sass/screen.scss */
+.content-container .panel-wrapper .panel .panel-image .panel-image-info {
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  margin-top: -1.5rem;
+  margin-left: -5.8rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFF;
+  -webkit-transition: all 300ms ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
+}
+/* line 226, ../sass/screen.scss */
+.content-container .panel-wrapper .panel .panel-image:hover .panel-image-overlay {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 300ms ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
+}
+/* line 231, ../sass/screen.scss */
+.content-container .panel-wrapper .panel .panel-image:hover .panel-image-info {
+  left: 50%;
+  -webkit-transition: all 300ms ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
+}
+/* line 236, ../sass/screen.scss */
+.content-container .panel-wrapper .panel .panel-description {
+  padding: 1.4rem;
+}
+/* line 238, ../sass/screen.scss */
+.content-container .panel-wrapper .panel .panel-description .panel-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+/* line 243, ../sass/screen.scss */
+.content-container .panel-wrapper .panel .panel-github {
+  font-size: 2rem;
+  text-align: center;
+}
+/* line 246, ../sass/screen.scss */
+.content-container .panel-wrapper .panel .panel-github a {
+  display: block;
+  padding: 0.6rem 0;
+  background-color: #850062;
+  color: #FFF;
+}
+/* line 251, ../sass/screen.scss */
+.content-container .panel-wrapper .panel .panel-github a:hover {
+  background-color: darkmagenta;
+}
+
+/********* 8.1 $INDEX *********/
+/********* 8.2 $PROFILE *********/
+/**
+ * 9.0 $FOOTER
+ * -----------------------------------------------------------------------------
+ */
+/* line 271, ../sass/screen.scss */
+.footer-container {
+  clear: both;
+  background-color: #330936;
+  padding: 1.4rem 0;
+  color: #FFF;
+  font-size: 1.2rem;
+}
+/* line 277, ../sass/screen.scss */
+.footer-container .copyright {
+  float: left;
+}
+/* line 280, ../sass/screen.scss */
+.footer-container .footer-github {
+  float: right;
+}
+/* line 283, ../sass/screen.scss */
+.footer-container a {
+  color: #FFF;
+}
+/* line 286, ../sass/screen.scss */
+.footer-container a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+/* line 292, ../sass/screen.scss */
+.footer-container, .push-down:after {
+  height: 4.6rem;
+}
+
+/**
+ * 10.0 $META
+ * -----------------------------------------------------------------------------
+ */

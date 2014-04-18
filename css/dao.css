@@ -1,0 +1,233 @@
+/*------------------------------------*\
+	$RESET
+\*------------------------------------*/
+/* line 7, ../sass/_reset.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/_reset.scss */
+html, body {
+  background: #FFF;
+  color: #000;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  font-style: normal;
+  font-weight: normal;
+  height: 100%;
+  line-height: 1.5;
+  position: relative;
+  cursor: default;
+}
+
+/* line 38, ../sass/_reset.scss */
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 47, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 51, ../sass/_reset.scss */
+ol, ul, li {
+  list-style: none;
+}
+
+/* line 55, ../sass/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 59, ../sass/_reset.scss */
+a:hover {
+  cursor: pointer;
+}
+
+/* line 63, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 68, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 73, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 80, ../sass/_reset.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 86, ../sass/_reset.scss */
+object,
+embed {
+  height: 100%;
+}
+
+/* line 90, ../sass/_reset.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 96, ../sass/_reset.scss */
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 101, ../sass/_reset.scss */
+select {
+  width: 100%;
+}
+
+/* line 105, ../sass/_reset.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 109, ../sass/_reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 112, ../sass/_reset.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* Variables */
+/* Global Effects */
+/* line 12, ../sass/dao.scss */
+.page {
+  height: 100%;
+  background-color: #EDE0CE;
+}
+
+/* line 17, ../sass/dao.scss */
+.globals {
+  max-width: 99rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  font-family: 'Old Standard TT', serif;
+  font-size: 1.5rem;
+}
+/* line 25, ../sass/dao.scss */
+.globals a {
+  color: #044d29;
+}
+/* line 27, ../sass/dao.scss */
+.globals a:hover {
+  color: #168039;
+}
+
+/* line 33, ../sass/dao.scss */
+.header-and-content {
+  min-height: 100%;
+  margin-bottom: -7.2rem;
+  padding-top: 3rem;
+}
+
+/* Header */
+/* line 41, ../sass/dao.scss */
+.header-container {
+  margin-bottom: 4.5rem;
+}
+/* line 44, ../sass/dao.scss */
+.header-container .header-title {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+/* Content */
+/* line 53, ../sass/dao.scss */
+.button-wrapper {
+  margin-bottom: 3rem;
+}
+/* line 57, ../sass/dao.scss */
+.button-wrapper input[type="button"]#retrieve-chapter {
+  width: 12.5rem;
+  height: 3.7rem;
+  border: 0;
+  background-color: #044d29;
+  margin: 0;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: #FFF;
+  -webkit-transition: all 150ms ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 150ms ease 0s;
+  -o-transition: all 150ms ease 0s;
+  transition: all 150ms ease 0s;
+}
+/* line 69, ../sass/dao.scss */
+.button-wrapper input[type="button"]#retrieve-chapter:hover {
+  cursor: pointer;
+  background-color: #168039;
+}
+/* line 73, ../sass/dao.scss */
+.button-wrapper input[type="button"]#retrieve-chapter:active {
+  background-color: #044d29;
+  padding: 1.2rem 1.2rem 0.8rem 1.8rem;
+}
+
+/* line 81, ../sass/dao.scss */
+#chapter-wrapper h3 {
+  font-size: 3rem;
+}
+
+/* Footer */
+/* line 88, ../sass/dao.scss */
+.header-and-content:after {
+  content: "";
+  display: block;
+}
+
+/* line 93, ../sass/dao.scss */
+.header-and-content:after, .site-footer {
+  height: 7.2rem;
+}
+
+/* line 97, ../sass/dao.scss */
+.site-footer {
+  padding: 3rem 0;
+  font-size: 1.2rem;
+}

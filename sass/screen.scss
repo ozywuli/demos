@@ -1,0 +1,299 @@
+/**
+ * -------------------------------------------------
+ * TABLE OF CONTENTS:
+ *
+ * 1.0 RESET
+ * 2.0 IMPORTS
+ * 3.0 MIXINS
+ * 4.0 VARIABLES
+ * 5.0 EFFECTS
+ * 6.0 GLOBALS
+ * 7.0 HEADER
+ *   7.1 Navigation
+ * 8.0 BODY
+ *   8.1 Index
+ *   8.2 Profile
+ * 9.0 FOOTER
+ * 10.0 META
+ * --------------------------------------------------
+*/
+
+/**
+ * 1.0 $RESET
+ * -----------------------------------------------------------------------------
+ */
+
+@import "reset";
+
+/**
+ * 2.0 $IMPORTS
+ * -----------------------------------------------------------------------------
+ */
+
+@import "compass/css3";
+
+/**
+ * 3.0 $MIXINS
+ * -----------------------------------------------------------------------------
+ */
+
+
+
+/**
+ * 4.0 $VARIABLES
+ * -----------------------------------------------------------------------------
+ */
+
+$purple: #330936;
+$lightpurple: #850062;
+
+/**
+ * 5.0 $EFFECTS
+ * -----------------------------------------------------------------------------
+ */
+
+
+/**
+ * 6.0 $GLOBALS
+ * -----------------------------------------------------------------------------
+ */
+
+.grid {
+	background-image: url('../img/graphy.png');
+	font-size: 1.4rem;
+	a {
+		color: $purple;
+		@include transition(all 150ms ease 0);
+	}
+	a:hover {
+		color: $purple;
+	}
+}
+
+.wrapper {
+	max-width: 119.8rem;
+	margin: 0 auto;
+	padding: 0 1.4rem;
+}
+
+h2.h2 {
+	font-size: 5.6rem;
+	line-height: 1;
+}
+
+.push-down {
+	min-height: 100%;
+	margin-bottom: -4.6rem;
+}
+
+.push-down:after {
+	content: "";
+	display: block;
+}
+
+/**
+ * 7.0 $HEADERS
+ * -----------------------------------------------------------------------------
+ */
+
+.header-container {
+	width: 100%;
+	margin-bottom: 2.8rem;
+	background-color: $purple;
+}
+
+.header-title {
+	float: left;
+	font-size: 4rem;
+	font-weight: bold;
+	a {
+		color: #FFF;
+		&:hover {
+			color: #FFF;
+		}
+	}
+}
+
+
+/********* 7.1 $NAVIGATION *********/
+
+.header-nav {
+	float: right;
+	ul {
+		li {
+			float: left;
+			margin-left: 1.4rem;
+			font-size: 1.2rem;
+			font-weight: bold;
+			a {
+				display: block;
+				@include border-radius(0.3rem);
+				margin: 1.4rem 0;
+				padding: 1rem 1.8rem;
+				background-color: $lightpurple;
+				color: #FFF;
+			}
+			a:hover {
+				background-color: darkmagenta;
+				color: #FFF;
+			}
+		}
+	}
+}
+
+.header-nav-about {
+	position: relative;
+}
+
+.header-nav-about-content {
+	display: none;
+	position: absolute;
+	top: 7.9rem;
+	right: 100%;
+	width: 30rem;
+	margin-right: -6.9rem;
+	@include border-radius(0.3rem);
+	padding: 1rem;
+	background-color: $lightpurple;
+	color: #FFF;
+	z-index: 10;
+}
+
+/**
+ * 8.0 $BODY
+ * -----------------------------------------------------------------------------
+ */
+
+.other-container {
+	max-width: 119.8rem;
+	margin: 0 auto;
+	padding: 0 1.4rem;
+}
+
+.content-container {
+	max-width: 119.8rem;
+	margin: 0 auto;
+	margin-bottom: 15rem;
+
+	.grid-sizer {
+		width: 33.3333%;
+		@media screen and (max-width: 900px) {
+			width: 50%;
+		}
+		@media screen and (max-width: 550px) {
+			width: 100%;
+		}
+	}
+
+	.panel-wrapper {
+		float: left;
+		overflow: hidden;
+		padding: 1.4rem;
+
+		.panel {
+			border-radius: 0.3rem;
+			border: 0.1rem solid $lightpurple;
+			background-color: #FFF;
+
+
+			.panel-image {
+				a {
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
+				.panel-image-overlay {
+					opacity: 0;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					@include transition(all 300ms ease 0s);
+				}
+				.panel-image-info {
+					position: absolute;
+					top: 50%;
+					left: -50%;
+					margin-top: -1.5rem;
+					margin-left: -5.8rem;
+					font-size: 2rem;
+					font-weight: bold;
+					color: #FFF;
+					@include transition(all 300ms ease 0s);
+				}
+				&:hover .panel-image-overlay {
+					opacity: 1;
+					background-color: rgba(0, 0, 0, 0.8);
+					@include transition(all 300ms ease 0s);
+				}
+				&:hover .panel-image-info {
+					left: 50%;
+					@include transition(all 300ms ease 0s);
+				}
+			}
+			.panel-description {
+				padding: 1.4rem;
+				.panel-title {
+					font-size: 2.8rem;
+					font-weight: bold;
+				}
+			}
+			.panel-github {
+				font-size: 2rem;
+				text-align: center;
+				a {
+					display: block;
+					padding: 0.6rem 0;
+					background-color: $lightpurple;
+					color: #FFF;
+					&:hover {
+						background-color: darkmagenta;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+/********* 8.1 $INDEX *********/
+
+/********* 8.2 $PROFILE *********/
+
+
+/**
+ * 9.0 $FOOTER
+ * -----------------------------------------------------------------------------
+ */
+
+.footer-container {
+	clear: both;
+	background-color: $purple;
+	padding: 1.4rem 0;
+	color: #FFF;
+	font-size: 1.2rem;
+	.copyright {
+		float: left;
+	}
+	.footer-github {
+		float: right;
+	}
+	a {
+		color: #FFF;
+	}
+	a:hover {
+		color: #FFF;
+		text-decoration: underline;
+	}
+}
+
+.footer-container, .push-down:after {
+	height: 4.6rem;
+}
+
+/**
+ * 10.0 $META
+ * -----------------------------------------------------------------------------
+ */

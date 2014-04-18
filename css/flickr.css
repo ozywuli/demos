@@ -1,0 +1,237 @@
+/*------------------------------------*\
+	$RESET
+\*------------------------------------*/
+/* line 7, ../sass/_reset.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/_reset.scss */
+html, body {
+  background: #FFF;
+  color: #000;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  font-style: normal;
+  font-weight: normal;
+  height: 100%;
+  line-height: 1.5;
+  position: relative;
+  cursor: default;
+}
+
+/* line 38, ../sass/_reset.scss */
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 47, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 51, ../sass/_reset.scss */
+ol, ul, li {
+  list-style: none;
+}
+
+/* line 55, ../sass/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 59, ../sass/_reset.scss */
+a:hover {
+  cursor: pointer;
+}
+
+/* line 63, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 68, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 73, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 80, ../sass/_reset.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 86, ../sass/_reset.scss */
+object,
+embed {
+  height: 100%;
+}
+
+/* line 90, ../sass/_reset.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 96, ../sass/_reset.scss */
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 101, ../sass/_reset.scss */
+select {
+  width: 100%;
+}
+
+/* line 105, ../sass/_reset.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 109, ../sass/_reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 112, ../sass/_reset.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 9, ../sass/flickr.scss */
+.grid {
+  width: auto;
+  height: 100%;
+  background-color: #2d1152;
+}
+
+/* line 15, ../sass/flickr.scss */
+.globals {
+  font-size: 1.5rem;
+}
+
+/* line 19, ../sass/flickr.scss */
+.sidebar {
+  position: fixed;
+  width: 30rem;
+  height: 100%;
+  background-color: #2d1152;
+  font-weight: bold;
+}
+/* line 25, ../sass/flickr.scss */
+.sidebar a {
+  color: #FFF;
+}
+/* line 28, ../sass/flickr.scss */
+.sidebar .title {
+  padding: 2rem 2rem 0 2rem;
+  font-size: 3rem;
+}
+/* line 32, ../sass/flickr.scss */
+.sidebar form.search-form {
+  position: relative;
+  margin-right: 2rem;
+  padding: 2rem 0 2rem 2rem;
+}
+/* line 36, ../sass/flickr.scss */
+.sidebar form.search-form input[type="text"].keywords {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0.5rem 1rem;
+  background-color: #FFF;
+  font-family: Arial, sans-serif;
+}
+/* line 44, ../sass/flickr.scss */
+.sidebar form.search-form input[type="submit"].search {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  margin: 0;
+  border: 0;
+  padding: 0.5rem 1rem;
+  background-color: #6e379d;
+  color: #FFF;
+  font-family: Arial, sans-serif;
+}
+/* line 54, ../sass/flickr.scss */
+.sidebar form.search-form input[type="submit"].search:hover {
+  cursor: pointer;
+}
+/* line 57, ../sass/flickr.scss */
+.sidebar form.search-form input[type="submit"].search:active {
+  vertical-align: top;
+  padding: 0.7rem 0.8rem 0.3rem 1.2rem;
+}
+/* line 64, ../sass/flickr.scss */
+.sidebar .search-history-list a {
+  display: block;
+  padding: 1rem 0 1rem 2rem;
+}
+/* line 67, ../sass/flickr.scss */
+.sidebar .search-history-list a:hover {
+  background-color: #6e379d;
+}
+
+/* line 74, ../sass/flickr.scss */
+.content-placeholder {
+  max-width: 78rem;
+  height: 100%;
+  background-color: #FFF;
+  padding: 2rem 2rem 2rem 32rem;
+}
+
+/* line 81, ../sass/flickr.scss */
+.content {
+  max-width: 78rem;
+  height: 100%;
+  background-color: #FFF;
+  padding: 2rem 2rem 2rem 32rem;
+}
+/* line 86, ../sass/flickr.scss */
+.content .img-block {
+  float: left;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  margin: 0 1rem 1rem 0;
+}
+/* line 92, ../sass/flickr.scss */
+.content .img-block img {
+  max-width: none;
+}

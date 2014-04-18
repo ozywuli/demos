@@ -1,0 +1,227 @@
+/*------------------------------------*\
+	$RESET
+\*------------------------------------*/
+/* line 7, ../sass/_reset.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/_reset.scss */
+html, body {
+  background: #FFF;
+  color: #000;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  font-style: normal;
+  font-weight: normal;
+  height: 100%;
+  line-height: 1.5;
+  position: relative;
+  cursor: default;
+}
+
+/* line 38, ../sass/_reset.scss */
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 47, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 51, ../sass/_reset.scss */
+ol, ul, li {
+  list-style: none;
+}
+
+/* line 55, ../sass/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 59, ../sass/_reset.scss */
+a:hover {
+  cursor: pointer;
+}
+
+/* line 63, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 68, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 73, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 80, ../sass/_reset.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 86, ../sass/_reset.scss */
+object,
+embed {
+  height: 100%;
+}
+
+/* line 90, ../sass/_reset.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 96, ../sass/_reset.scss */
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 101, ../sass/_reset.scss */
+select {
+  width: 100%;
+}
+
+/* line 105, ../sass/_reset.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 109, ../sass/_reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 112, ../sass/_reset.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 5, ../sass/babel.scss */
+.globals {
+  background-color: #000;
+  color: #FFF;
+  font-family: 'PT Serif', serif;
+}
+/* line 9, ../sass/babel.scss */
+.globals a {
+  color: #FFF;
+  text-decoration: underline;
+}
+/* line 12, ../sass/babel.scss */
+.globals a:hover {
+  color: #AAA;
+}
+
+/* line 18, ../sass/babel.scss */
+.grid {
+  max-width: 111rem;
+  height: 100%;
+  margin: 0 auto -3rem auto;
+  padding: 1.5rem;
+}
+
+/* line 26, ../sass/babel.scss */
+.header-container .header-title {
+  font-size: 3rem;
+  line-height: 1;
+}
+/* line 29, ../sass/babel.scss */
+.header-container .header-title a {
+  text-decoration: none;
+}
+
+/* line 35, ../sass/babel.scss */
+.grid:after {
+  display: block;
+  content: "";
+}
+
+/* line 40, ../sass/babel.scss */
+.grid:after, .footer-container {
+  height: 3rem;
+}
+
+/* line 45, ../sass/babel.scss */
+.content-container .learn {
+  margin-bottom: 1.5rem;
+}
+/* line 48, ../sass/babel.scss */
+.content-container input[type="button"] {
+  background-color: #000;
+  border: 0.3rem solid #FFF;
+  margin-bottom: 6rem;
+  padding: 0.5rem 1rem;
+  color: #FFF;
+  font-weight: bold;
+}
+/* line 55, ../sass/babel.scss */
+.content-container input[type="button"]:hover {
+  -webkit-transition: all 600ms ease;
+  -webkit-transition-delay: 0;
+  -moz-transition: all 600ms ease 0;
+  -o-transition: all 600ms ease 0;
+  transition: all 600ms ease 0;
+  cursor: pointer;
+  background-color: #FFF;
+  color: #000;
+}
+/* line 61, ../sass/babel.scss */
+.content-container input[type="button"]:active {
+  background-color: #000;
+  border: 0.3rem solid #000;
+}
+/* line 66, ../sass/babel.scss */
+.content-container #phrase-wrapper {
+  max-width: 450rem;
+  font-size: 1.5rem;
+}
+/* line 69, ../sass/babel.scss */
+.content-container #phrase-wrapper .generated-phrase:first-letter {
+  text-transform: capitalize;
+}
+
+/* line 75, ../sass/babel.scss */
+.footer-container {
+  max-width: 111rem;
+  height: 3rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  font-size: 1.2rem;
+}

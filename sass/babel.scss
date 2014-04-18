@@ -1,0 +1,82 @@
+@import "reset";
+
+@import "compass/css3";
+
+.globals {
+	background-color: #000;
+	color: #FFF;
+	font-family: 'PT Serif', serif;
+	a {
+		color: #FFF;
+		text-decoration: underline;
+		&:hover {
+			color: #AAA;
+		}
+	}
+}
+
+.grid {
+	max-width: 111rem;
+	height: 100%;
+	margin: 0 auto -3rem auto;
+	padding: 1.5rem;
+}
+
+.header-container {
+	.header-title {
+		font-size: 3rem;
+		line-height: 1;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.grid:after {
+	display: block;
+	content: "";
+}
+
+.grid:after, .footer-container {
+	height: 3rem;
+}
+
+.content-container {
+	.learn {
+		margin-bottom: 1.5rem;
+	}
+	input[type="button"] {
+		background-color: #000;
+		border: 0.3rem solid #FFF;
+		margin-bottom: 6rem;
+		padding: 0.5rem 1rem;
+		color: #FFF;
+		font-weight: bold;
+		&:hover {
+			@include transition(all 600ms ease 0);
+			cursor: pointer;
+			background-color: #FFF;
+			color: #000;
+		}
+		&:active {
+			background-color: #000;
+			border: 0.3rem solid #000;
+		}
+	}
+	#phrase-wrapper {
+		max-width: 450rem;
+		font-size: 1.5rem;
+		.generated-phrase:first-letter {
+			text-transform: capitalize;
+		}
+	}
+}
+
+.footer-container {
+	max-width: 111rem;
+	height: 3rem;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+	font-size: 1.2rem;
+}
+

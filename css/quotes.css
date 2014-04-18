@@ -1,0 +1,240 @@
+/*------------------------------------*\
+	$RESET
+\*------------------------------------*/
+/* line 7, ../sass/_reset.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/_reset.scss */
+html, body {
+  background: #FFF;
+  color: #000;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  font-style: normal;
+  font-weight: normal;
+  height: 100%;
+  line-height: 1.5;
+  position: relative;
+  cursor: default;
+}
+
+/* line 38, ../sass/_reset.scss */
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 47, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 51, ../sass/_reset.scss */
+ol, ul, li {
+  list-style: none;
+}
+
+/* line 55, ../sass/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 59, ../sass/_reset.scss */
+a:hover {
+  cursor: pointer;
+}
+
+/* line 63, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 68, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 73, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 80, ../sass/_reset.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 86, ../sass/_reset.scss */
+object,
+embed {
+  height: 100%;
+}
+
+/* line 90, ../sass/_reset.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 96, ../sass/_reset.scss */
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 101, ../sass/_reset.scss */
+select {
+  width: 100%;
+}
+
+/* line 105, ../sass/_reset.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 109, ../sass/_reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 112, ../sass/_reset.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 5, ../sass/quotes.scss */
+.grid {
+  max-width: 111rem;
+  min-height: 100%;
+  margin: 0 auto -3.1rem auto;
+  padding: 1.5rem;
+  background-color: #FFF;
+}
+
+/* line 13, ../sass/quotes.scss */
+.globals {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-align: center;
+  line-height: 1.4;
+}
+/* line 17, ../sass/quotes.scss */
+.globals a {
+  color: #DDD;
+}
+/* line 20, ../sass/quotes.scss */
+.globals a:hover {
+  text-decoration: underline;
+}
+
+/* line 25, ../sass/quotes.scss */
+.header-title {
+  float: left;
+  margin-bottom: 3rem;
+}
+/* line 28, ../sass/quotes.scss */
+.header-title a {
+  display: block;
+  width: 12rem;
+  height: 12rem;
+  line-height: 12rem;
+  border-radius: 50% 50%;
+  background-color: #000;
+  color: #FFF;
+  font-size: 3rem;
+}
+/* line 37, ../sass/quotes.scss */
+.header-title a:hover {
+  text-decoration: none;
+}
+
+/* line 43, ../sass/quotes.scss */
+.content-container {
+  clear: both;
+}
+/* line 45, ../sass/quotes.scss */
+.content-container input[type="button"] {
+  border: 0.15rem solid #000;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem black;
+  -moz-box-shadow: 0.3rem 0.3rem 0.3rem black;
+  box-shadow: 0.3rem 0.3rem 0.3rem black;
+  margin: 0 0 3rem 0;
+  padding: 0.5rem 2rem;
+  background-color: #FFF;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 2rem;
+}
+/* line 53, ../sass/quotes.scss */
+.content-container input[type="button"]:hover {
+  -webkit-transition: all 150ms ease;
+  -webkit-transition-delay: 0;
+  -moz-transition: all 150ms ease 0;
+  -o-transition: all 150ms ease 0;
+  transition: all 150ms ease 0;
+  cursor: pointer;
+  background-color: #000;
+  color: #FFF;
+}
+/* line 60, ../sass/quotes.scss */
+.content-container #quote-wrapper {
+  font-size: 3rem;
+}
+/* line 63, ../sass/quotes.scss */
+.content-container #quote-wrapper blockquote p {
+  margin-bottom: 1.5rem;
+}
+/* line 66, ../sass/quotes.scss */
+.content-container #quote-wrapper blockquote footer {
+  font-size: 1.5rem;
+}
+/* line 68, ../sass/quotes.scss */
+.content-container #quote-wrapper blockquote footer .quotes-source {
+  font-style: italic;
+}
+
+/* line 76, ../sass/quotes.scss */
+.grid:after {
+  content: "";
+  display: block;
+  height: 3.1rem;
+}
+
+/* line 82, ../sass/quotes.scss */
+.footer-container {
+  max-width: 111rem;
+  margin: 0 auto;
+  background-color: #FFF;
+  height: 3.1rem;
+  font-size: 1.2rem;
+  text-align: right;
+}
