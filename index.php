@@ -2,6 +2,7 @@
 
 	<div class="content-container clearfix" id="container">
 
+		<!-- Backbone Note Taker -->
 		<div class="panel-wrapper grid-sizer">
 			<div class="panel">
 				<section class="panel-image">
@@ -21,6 +22,7 @@
 			</div>
 		</div>
 
+		<!-- Quotes -->
 		<div class="panel-wrapper grid-sizer">
 			<div class="panel">
 				<section class="panel-image">
@@ -35,11 +37,12 @@
 					<p>This is a simple app that retrieves a single quote when the user clicks the "New Quotation" button. Quotes are stored in JSON format and fetched asynchronously via JQuery's getJSON method so that page refreshes are unnecessary. No server side languages or databases are involved. The generated quotes all come from a collection of quotes that I've collected over the years.</p>
 				</section>
 				<section class="panel-github">
-					<a href="">See code on GitHub</a>
+					<a href="https://github.com/ozywuli/demos/blob/master/quotes.html">See code on GitHub</a>
 				</section>
 			</div>
 		</div>
 
+		<!-- Dao De Jing -->
 		<div class="panel-wrapper grid-sizer">
 			<div class="panel">
 				<section class="panel-image">
@@ -54,12 +57,13 @@
 					<p>"The Dao that can be spoken is not the eternal Dao." Thus spoke the sage, Lao Tzu. This app allows the user to generate on click a random entry from Lao Tzu's Dao De Jing. Entries are stored in a MySQL database and results are fetched via PHP and ajax.</p>
 				</section>
 				<section class="panel-github">
-					<a href="">See Code on GitHub</a>
+					<a href="https://github.com/ozywuli/demos/blob/master/dao.php">See Code on GitHub</a>
 				</section>
 			</div>
 		</div>
 
-				<div class="panel-wrapper grid-sizer">
+		<!-- Magnific Flickr -->
+		<div class="panel-wrapper grid-sizer">
 			<div class="panel">
 				<section class="panel-image">
 					<a href="flickr.php">
@@ -73,11 +77,12 @@
 					<p>This simple app was made by modifying code found in <a href="http://carst.me/2011/08/search-for-photos-using-jquery-flickr-api-and-fancybox-part-1/">Ionut Carsts's beginner tutorial</a> on retrieving and displaying photos from Flickr by using JQuery, Fancybox, and Flickr's API. I made changes to the Javascript code so that it made more sense to me, customized the CSS styling of the app, and replaced the Fancybox plugin with Magnific, a faster, lighter, and responsive lightbox.</p>
 				</section>
 				<section class="panel-github">
-					<a href="">See Code on GitHub</a>
+					<a href="https://github.com/ozywuli/demos/blob/master/flickr.php">See Code on GitHub</a>
 				</section>
 			</div>
 		</div>
 
+		<!-- Dictionary -->
 		<div class="panel-wrapper grid-sizer">
 			<div class="panel">
 				<section class="panel-image">
@@ -97,6 +102,7 @@
 			</div>
 		</div>
 
+		<!-- Babel -->
 		<div class="panel-wrapper grid-sizer">
 			<div class="panel">
 				<section class="panel-image">
@@ -111,7 +117,7 @@
 					<p>"The Library of Babel" is a short story by the famed magical realist writer, Jorge Luis Borges. This strange library of Babel is composed of an infinite number of rooms, all shaped like a hexagon. Within, they house countless books that store all possible sequence of words. Babel is an small app that mimics the kind of phrases that can be found in the library. Sometimes they are meaningful, but more often than not the phrases are incoherent. The app uses JQuery to puts together these phrase from a random selection of words, letters, and punctuations stored in arrays.</p>
 				</section>
 				<section class="panel-github">
-					<a href="">See Code on GitHub</a>
+					<a href="https://github.com/ozywuli/demos/blob/master/babel.html">See Code on GitHub</a>
 				</section>
 			</div>
 		</div>

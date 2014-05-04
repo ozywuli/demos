@@ -30,7 +30,7 @@
 						<a href="#">About</a>
 						<div class="header-nav-about-content">Hi, I'm Ozy. I run Demos, a showcase of small and simples apps that I've made while learning various web technologies like JQuery, PHP, and 3rd party APIs. I provide a brief description for each app, a demo for users to try, and a link to their code on GitHub for those interested. I hope you enjoy.</div>
 					</li>
-					<li><a href="https://github.com/ozywuli/repo">Github</a></li>
+					<li><a href="https://github.com/ozywuli/demos">Github</a></li>
 				</ul>
 			</nav>
 		</div>
