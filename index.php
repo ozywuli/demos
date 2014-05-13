@@ -47,7 +47,7 @@
 		<div class="panel-wrapper grid-sizer">
 			<div class="panel">
 				<section class="panel-image">
-					<a href="quotes.html">
+					<a href="apps/quotes/index.php">
 						<img src="img/quotes.png" alt="Panel image for Quotes mini app" />
 						<div class="panel-image-overlay"></div>
 						<div class="panel-image-info">VIEW DEMO</div>
@@ -127,7 +127,7 @@
 		<div class="panel-wrapper grid-sizer">
 			<div class="panel">
 				<section class="panel-image">
-					<a href="babel.html">
+					<a href="apps/babel/index.php">
 						<img src="img/babel.png" alt="Panel image of a white hexagon against a black background" />
 						<div class="panel-image-overlay"></div>
 						<div class="panel-image-info">VIEW DEMO</div>
