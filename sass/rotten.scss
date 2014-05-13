@@ -1,0 +1,82 @@
+@import "reset";
+
+@import "compass/css3";
+
+$titanium: #30313B;
+$link-yellow: #FFDE66;
+
+html, body {
+  background-color: $titanium;
+  color: #FFF;
+}
+
+.globals {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  a {
+    color: $link-yellow;
+  }
+}
+
+.header-container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 3rem 0 0 0;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.searchbar-container {
+  width: 60rem;
+  margin: 0 auto;
+  label {
+    display: none;
+  }
+  input[type="text"]#searchbar {
+    width: 100%;
+    border: 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+  }
+}
+
+.rec-container {
+  max-width: 60rem;
+  margin: 2rem auto 6rem auto;
+
+  .rec-item {
+    margin-bottom: 2rem;
+    img {
+      width: 20rem !important;
+    }
+  }
+
+}
+
+.ui-menu {
+  width: auto !important;
+  max-width: 60rem;
+  border: 1px solid #000;
+  background-color: #FFF;
+  font-size: 1.6rem;
+  a {
+    display: block;
+    padding: 1rem;
+    color: #000;
+    @include transition(all 150ms ease 0s);
+    &:hover {
+      background-color: $link-yellow;
+    }
+  }
+
+  img, p {
+    display: inline-block;
+  }
+
+  img {
+    margin-right: 1rem;
+    width: 61px !important;
+    height: 91px !important;
+  }
+
+}

@@ -17,12 +17,16 @@ $(function() {
 $(function() {
 	var $container = $('#container')
 
+$container.imagesLoaded( function() {
+
 	var msnry = $container.data('masonry');
 
 	$container.masonry({
 		columnWidth: '.grid-sizer',
 		itemSelector: '.panel-wrapper'
 	});
+});
+
 
 });
 

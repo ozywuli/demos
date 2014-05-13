@@ -8,6 +8,7 @@
 	</footer>
 
 	<script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/jquery.masonry.min.js"></script>
 	<script src="js/script.js"></script>
 

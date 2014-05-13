@@ -1,0 +1,224 @@
+/*------------------------------------*\
+	$RESET
+\*------------------------------------*/
+/* line 7, ../sass/_reset.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/_reset.scss */
+html, body {
+  background: #FFF;
+  color: #000;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  font-style: normal;
+  font-weight: normal;
+  height: 100%;
+  line-height: 1.5;
+  position: relative;
+  cursor: default;
+}
+
+/* line 38, ../sass/_reset.scss */
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 47, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 51, ../sass/_reset.scss */
+ol, ul, li {
+  list-style: none;
+}
+
+/* line 55, ../sass/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 59, ../sass/_reset.scss */
+a:hover {
+  cursor: pointer;
+}
+
+/* line 63, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 68, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 73, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 80, ../sass/_reset.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 86, ../sass/_reset.scss */
+object,
+embed {
+  height: 100%;
+}
+
+/* line 90, ../sass/_reset.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 96, ../sass/_reset.scss */
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 101, ../sass/_reset.scss */
+select {
+  width: 100%;
+}
+
+/* line 105, ../sass/_reset.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 109, ../sass/_reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 112, ../sass/_reset.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 8, ../sass/rotten.scss */
+html, body {
+  background-color: #30313b;
+  color: #FFF;
+}
+
+/* line 13, ../sass/rotten.scss */
+.globals {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+}
+/* line 16, ../sass/rotten.scss */
+.globals a {
+  color: #ffde66;
+}
+
+/* line 21, ../sass/rotten.scss */
+.header-container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 3rem 0 0 0;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+/* line 29, ../sass/rotten.scss */
+.searchbar-container {
+  width: 60rem;
+  margin: 0 auto;
+}
+/* line 32, ../sass/rotten.scss */
+.searchbar-container label {
+  display: none;
+}
+/* line 35, ../sass/rotten.scss */
+.searchbar-container input[type="text"]#searchbar {
+  width: 100%;
+  border: 0;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+}
+
+/* line 43, ../sass/rotten.scss */
+.rec-container {
+  max-width: 60rem;
+  margin: 2rem auto 6rem auto;
+}
+/* line 47, ../sass/rotten.scss */
+.rec-container .rec-item {
+  margin-bottom: 2rem;
+}
+/* line 49, ../sass/rotten.scss */
+.rec-container .rec-item img {
+  width: 20rem !important;
+}
+
+/* line 56, ../sass/rotten.scss */
+.ui-menu {
+  width: auto !important;
+  max-width: 60rem;
+  border: 1px solid #000;
+  background-color: #FFF;
+  font-size: 1.6rem;
+}
+/* line 62, ../sass/rotten.scss */
+.ui-menu a {
+  display: block;
+  padding: 1rem;
+  color: #000;
+  -webkit-transition: all 150ms ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 150ms ease 0s;
+  -o-transition: all 150ms ease 0s;
+  transition: all 150ms ease 0s;
+}
+/* line 67, ../sass/rotten.scss */
+.ui-menu a:hover {
+  background-color: #ffde66;
+}
+/* line 72, ../sass/rotten.scss */
+.ui-menu img, .ui-menu p {
+  display: inline-block;
+}
+/* line 76, ../sass/rotten.scss */
+.ui-menu img {
+  margin-right: 1rem;
+  width: 61px !important;
+  height: 91px !important;
+}
